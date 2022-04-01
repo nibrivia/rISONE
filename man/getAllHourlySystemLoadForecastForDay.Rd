@@ -4,9 +4,13 @@
 \alias{getAllHourlySystemLoadForecastForDay}
 \title{Get All Hourly System Load Forecast For Day}
 \usage{
-getAllHourlySystemLoadForecastForDay(day = Sys.Date(), user = getOption(x =
-  "ISO_NE_USER"), password = getOption(x = "ISO_NE_PASSWORD"),
-  out.tz = "America/New_York", ...)
+getAllHourlySystemLoadForecastForDay(
+  day = Sys.Date(),
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{day}{date in \code{'\%Y-\%m-\%d'}, or object coercible to class \code{Date}}
@@ -22,4 +26,3 @@ getAllHourlySystemLoadForecastForDay(day = Sys.Date(), user = getOption(x =
 \description{
 Get all hourly load forecasts for a given day. May need to add \code{config = httr::config(ssl.verifypeer = FALSE)} if SSL cert cant be found.
 }
-

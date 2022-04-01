@@ -4,9 +4,14 @@
 \alias{getRtHourlyDemandByLocationIdForDay}
 \title{Get Current Realtime Hourly Demand}
 \usage{
-getRtHourlyDemandByLocationIdForDay(day = Sys.Date() - 3, locId = 4008,
-  user = getOption(x = "ISO_NE_USER"), password = getOption(x =
-  "ISO_NE_PASSWORD"), out.tz = "America/New_York", ...)
+getRtHourlyDemandByLocationIdForDay(
+  day = Sys.Date() - 3,
+  locId = 4008,
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{day}{date in YYYY-MM-DD format, or object coercible to class \code{Date}}
@@ -39,4 +44,3 @@ Location \tab Location ID \cr
 }
 Note that historical hourly load zone information may not be available for a few days.
 }
-

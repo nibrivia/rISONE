@@ -4,19 +4,22 @@
 \alias{get_path}
 \title{Get value from any API path}
 \usage{
-get_path(path, user = getOption(x = "ISO_NE_USER"), password = getOption(x =
-  "ISO_NE_PASSWORD"), ...)
+get_path(
+  path,
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  ...
+)
 }
 \arguments{
+\item{path}{requested path}
+
 \item{user}{user account}
 
 \item{password}{password}
 
 \item{...}{passed to httr functions.}
-
-\item{out.tz}{output timezone.}
 }
 \description{
 May need to add \code{config = httr::config(ssl.verifypeer = FALSE)} if SSL cert can't be found.
 }
-

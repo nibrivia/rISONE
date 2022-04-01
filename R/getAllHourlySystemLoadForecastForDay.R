@@ -10,7 +10,7 @@
 #' @importFrom lubridate mdy_hms
 #' @importFrom httr GET authenticate accept_json config
 #' @importFrom RJSONIO fromJSON
-#' @importFrom dplyr rbind_all
+#' @importFrom dplyr bind_rows
 #' @export
 getAllHourlySystemLoadForecastForDay <- function(day = Sys.Date(), user = getOption(x = "ISO_NE_USER"), password = getOption(x = "ISO_NE_PASSWORD"), 
                                            out.tz = "America/New_York", ...){
@@ -19,7 +19,7 @@ getAllHourlySystemLoadForecastForDay <- function(day = Sys.Date(), user = getOpt
   
   json <- get_path(path = paste0("/hourlyloadforecast/all/day/", dd), user = user, password = password, ...)
   
-  dat <- dplyr::rbind_all(lapply(json$HourlyLoadForecasts$HourlyLoadForecast, 
+  dat <- dplyr::bind_rows(lapply(json$HourlyLoadForecasts$HourlyLoadForecast, 
                         FUN = function(x) as.data.frame(x = x, stringsAsFactors = FALSE)))
   
   dat$BeginDate <- lubridate::ymd_hms(dat$BeginDate, tz = out.tz)

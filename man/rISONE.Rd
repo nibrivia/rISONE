@@ -3,7 +3,6 @@
 \docType{package}
 \name{rISONE}
 \alias{rISONE}
-\alias{rISONE-package}
 \title{\pkg{rISONE} an R package for the ISO New England API}
 \description{
 \code{rISONE} is comprised of a set of functions that interact with the ISO-NE RESTful \href{https://webservices.iso-ne.com/docs/v1.1/}{API}. 
@@ -23,4 +22,3 @@ getAllHourlySystemLoadForecastForDay()
 }
 
 }
-

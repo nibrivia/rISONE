@@ -4,9 +4,12 @@
 \alias{getCurrentFiveMinuteSystemLoad}
 \title{Get Current Five Minute System Load}
 \usage{
-getCurrentFiveMinuteSystemLoad(user = getOption(x = "ISO_NE_USER"),
-  password = getOption(x = "ISO_NE_PASSWORD"), out.tz = "America/New_York",
-  ...)
+getCurrentFiveMinuteSystemLoad(
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{user}{user account}
@@ -20,4 +23,3 @@ getCurrentFiveMinuteSystemLoad(user = getOption(x = "ISO_NE_USER"),
 \description{
 May need to add \code{config(ssl.verifypeer = FALSE)} if SSL cert cant be found.
 }
-

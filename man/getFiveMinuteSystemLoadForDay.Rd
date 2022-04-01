@@ -4,9 +4,13 @@
 \alias{getFiveMinuteSystemLoadForDay}
 \title{get Five Minute System Load For Day}
 \usage{
-getFiveMinuteSystemLoadForDay(day = Sys.Date(), user = getOption(x =
-  "ISO_NE_USER"), password = getOption(x = "ISO_NE_PASSWORD"),
-  out.tz = "America/New_York", ...)
+getFiveMinuteSystemLoadForDay(
+  day = Sys.Date(),
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{day}{date in \code{'\%Y-\%m-\%d'}, or object coercible to class \code{Date}}
@@ -22,4 +26,3 @@ getFiveMinuteSystemLoadForDay(day = Sys.Date(), user = getOption(x =
 \description{
 May need to add \code{config = config(ssl.verifypeer = FALSE)} if SSL cert cant be found.
 }
-

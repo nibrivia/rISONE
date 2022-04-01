@@ -2,9 +2,9 @@
 #' 
 #' May need to add \code{config = httr::config(ssl.verifypeer = FALSE)} if SSL cert can't be found.
 #' 
+#' @param path requested path
 #' @param user user account
 #' @param password password
-#' @param out.tz output timezone.
 #' @param ... passed to httr functions.
 #' @importFrom httr GET authenticate accept_json config
 #' @importFrom RJSONIO fromJSON

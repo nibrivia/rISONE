@@ -4,9 +4,12 @@
 \alias{getCurrentMorningReport}
 \title{Get Current Morning Report}
 \usage{
-getCurrentMorningReport(user = getOption(x = "ISO_NE_USER"),
-  password = getOption(x = "ISO_NE_PASSWORD"), out.tz = "America/New_York",
-  ...)
+getCurrentMorningReport(
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{user}{user account}
@@ -20,4 +23,3 @@ getCurrentMorningReport(user = getOption(x = "ISO_NE_USER"),
 \description{
 May need to add \code{config = httr::config(ssl.verifypeer = FALSE)} if SSL cert cant be found.
 }
-

@@ -12,4 +12,3 @@ readIsoNeCsvFile(filepath)
 \description{
 Read an ISO-NE csv data file
 }
-

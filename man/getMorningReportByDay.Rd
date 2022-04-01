@@ -4,9 +4,13 @@
 \alias{getMorningReportByDay}
 \title{Get Morning Report By Day}
 \usage{
-getMorningReportByDay(day = Sys.Date(), user = getOption(x = "ISO_NE_USER"),
-  password = getOption(x = "ISO_NE_PASSWORD"), out.tz = "America/New_York",
-  ...)
+getMorningReportByDay(
+  day = Sys.Date(),
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{day}{date}
@@ -22,4 +26,3 @@ getMorningReportByDay(day = Sys.Date(), user = getOption(x = "ISO_NE_USER"),
 \description{
 May need to add \code{config = httr::config(ssl.verifypeer = FALSE)} if SSL cert cant be found.
 }
-

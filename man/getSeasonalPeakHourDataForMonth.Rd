@@ -4,9 +4,13 @@
 \alias{getSeasonalPeakHourDataForMonth}
 \title{Get Current Seasonal Peak Hour Data}
 \usage{
-getSeasonalPeakHourDataForMonth(month = format(Sys.Date(), format = "\%Y\%m"),
-  user = getOption(x = "ISO_NE_USER"), password = getOption(x =
-  "ISO_NE_PASSWORD"), out.tz = "America/New_York", ...)
+getSeasonalPeakHourDataForMonth(
+  month = format(Sys.Date(), format = "\%Y\%m"),
+  user = getOption(x = "ISO_NE_USER"),
+  password = getOption(x = "ISO_NE_PASSWORD"),
+  out.tz = "America/New_York",
+  ...
+)
 }
 \arguments{
 \item{month}{month in 'YYYYMM' format}
@@ -22,4 +26,3 @@ getSeasonalPeakHourDataForMonth(month = format(Sys.Date(), format = "\%Y\%m"),
 \description{
 May need to add \code{config = httr::config(ssl.verifypeer = FALSE)} if SSL cert cant be found.
 }
-
